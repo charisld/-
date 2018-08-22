@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>网易云音乐</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="fonts/demo.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+</head>
+<body>
+    <header>
+        <div class="left">
+            <img src="image/logo_03.jpg"/>
+            <form id='search-box' class="clear" method="post" >
+                <button class="btn-l" title="后退"><</button>
+                <button class="btn-r" title="前进">></button>
+                <input type="text" placeholder="搜索音乐，视频，歌词，电台" class="search-text"/>
+                <input type="submit" value="" class="search-btn"/>
+            </form> 
+        </div>
+        <div class="right">
+            <!-- <div class="info">
+                <div class="photo">
+                    <img src="">
+                </div>
+                <p class="name">冬瓜胖三斤</p>
+                <div class="angle"></div>      
+            </div> -->
+        </div>
+    </header>
+    <div  class="content main-menu">
+        <div class="menu">
+            <ul>
+                <li class="menu-item">
+                    <span>推荐</span>
+                    <ul>
+                        <li class="active found" ><span></span>发现音乐</li>
+                        <li><span></span>私人FM</li>
+                        <li><span></span>MV</li>
+                        <li><span></span>朋友</li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <span>我的音乐</span>
+                    <ul>
+                        <li><span></span>本地音乐</li>
+                        <li><span></span>下载管理</li>
+                        <li><span></span>我的音乐云盘</li>
+                        <li><span></span>我的收藏</li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <span>创建的歌单</span>
+                    <!-- <button><img src='image/添加.png'></button> -->
+                    <span class="extend">></span>
+                    <ul class="music-list">
+                        <li><span></span>喜欢</li>
+                    </ul>
+                    <span class="add-img"></span>
+                   
+                </li>
+                <li class="menu-item">
+                    <span>收藏的歌单</span>
+                    <span class="extend">></span>
+                    <ul class="music-list">
+                        <li><span></span>米津玄师</li>
+                    </ul>
+                </li>
+            </ul> 
+        </div>
+        <div class="present-m clear">
+            <div class="album">
+                <img src=''>
+            </div>
+            <div class="cover">
+            </div>
+            <p>
+                <span class="currentId"></span>
+                <span class="currentsong"></span>
+                <span class="singer"></span>
+            </p>
+        </div>
+        <div class="music">
+            <div class="music-wrap">
+                <ul class="clear">
+                    <li class="music-wrap-item active">个性推荐</li>
+                    <li class="music-wrap-item">歌单</li>
+                    <li class="music-wrap-item">主播电台</li>
+                    <li class="music-wrap-item">排行榜</li>
+                    <li class="music-wrap-item">歌手</li>
+                    <li class="music-wrap-item">最新音乐</li>
+                </ul>
+            </div>
+            <div class="music-content show">
+                <div class="auto-play"> 
+                    <div class="img-group">
+                        <img class="pic pic-center"  src="image/1.png">
+                        <img class="pic pic-right"  src="image/2.png"> 
+                        <img class="pic pic-home"  src="image/3.png"> 
+                        <img class="pic pic-home"  src="image/4.png"> 
+                        <img class="pic pic-home"  src="image/1.png"> 
+                        <img class="pic pic-home"  src="image/4.png"> 
+                        <img class="pic pic-home"  src="image/2.png"> 
+                        <img class="pic pic-left"  src="image/3.png">
+                    </div> 
+                    <div class="shadow">
+                    </div>
+                    <div class="box-wrap">
+                         <div class="box left-box"><span class="left-btn"></span></div>
+                        <div class="box right-box"><span class="right-btn"></span></div>
+                    </div>
+                   
+                    <div class="span-group">
+                        <span class="choice active"></span>
+                        <span class="choice"></span>
+                        <span class="choice"></span>
+                        <span class="choice"></span>
+                        <span class="choice"></span>
+                        <span class="choice"></span>
+                        <span class="choice"></span>
+                        <span class="choice"></span>
+                    </div>
+                </div>
+                <div class="recommend">
+                    <div class="title">
+                        <p class="left-title">推荐歌单</p>
+                        <span class="more">更多></span>
+                    </div>
+                    <div class="flex-group">
+                        <div class="re-item">
+                            <img src=""/>
+                            <span class="list-id"></span>
+                            <p class="des"></p>
+                            <p class="caption"></p>
+                        </div>
+                        <div class="re-item">
+                            <img src=""/>
+                            <span class="list-id"></span>
+                            <p class="des"></p>
+                            <p class="caption"></p>
+                        </div>
+                        <div class="re-item">
+                            <img src=""/>
+                            <span class="list-id"></span>
+                            <p class="des"></p>
+                            <p class="caption"></p>
+                        </div>
+                        <div class="re-item">
+                            <img src=""/>
+                            <span class="list-id"></span>
+                            <p class="des"></p>
+                            <p class="caption"></p>
+                        </div>
+                        <div class="re-item">
+                            <img src=""/>
+                            <span class="list-id"></span>
+                            <p class="des"></p>
+                            <p class="caption"></p>
+                        </div>
+                        <div class="re-item">
+                            <img src=""/>
+                            <span class="list-id"></span>
+                            <p class="des"></p>
+                            <p class="caption"></p>
+                        </div>
+                        <div class="re-item">
+                            <img src=""/>
+                            <span class="list-id"></span>
+                            <p class="des"></p>
+                            <p class="caption"></p>
+                        </div>
+                        <div class="re-item">
+                            <img src=""/>
+                            <span class="list-id"></span>
+                            <p class="des"></p>
+                            <p class="caption"></p>
+                        </div>
+                        <div class="re-item">
+                            <img src=""/>
+                            <span class="list-id"></span>
+                            <p class="des"></p>
+                            <p class="caption"></p>
+                        </div>
+                        <div class="re-item">
+                            <img src=""/>
+                            <span class="list-id"></span>
+                            <p class="des"></p>
+                            <p class="caption"></p>
+                        </div>
+
+                    </div>
+
+                <div class="exclusive">
+                    <div class="title">
+                        <p class="left-title">独家放送</p>
+                        <span class="more">更多></span>
+                    </div>
+                    <div class="flex-group">
+                        <div class="ex-item">
+                            <span></span>
+                            <img src=""/>
+                            <p class="kind"></p>
+                        </div>
+                        <div class="ex-item">
+                            <span></span>
+                            <img src=""/>
+                            <p class="kind"></p>
+                        </div>
+                        <div class="ex-item">
+                            <span></span>
+                            <img src=""/>
+                            <p class="kind"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-music">
+                    <div class="title">
+                        <p class="left-title">最新音乐</p>
+                        <span class="more">更多></span>
+                    </div>
+                    <table>
+                        <tr>
+                            <td>
+                                <span></span>
+                                <img>
+                                <div>
+                                    <p></p>
+                                    <p></p>
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="mv">
+                    <div class="title">
+                        <p class="left-title">推荐MV</p>
+                        <span class="more">更多></span>
+                    </div>
+                    <div class="flex-group">
+                        <div class="mv-item">
+                            <p></p>
+                            <span></span>
+                            <img>
+                            <p class="des"></p>
+                        </div>
+                        <div class="mv-item">
+                            <p></p>
+                            <span></span>
+                            <img>
+                            <p class="des"></p>
+                        </div>
+                        <div class="mv-item">
+                            <p></p>
+                            <span></span>
+                            <img>
+                            <p class="des"></p>
+                        </div>
+                        <div class="mv-item">
+                            <p></p>
+                            <span></span>
+                            <img>
+                            <p class="des"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="station">
+                    <div class="title">
+                        <p class="left-title">主播电台</p>
+                        <span class="more">更多></span>
+                    </div>
+                    <div class="flex-group">
+                       <div class="st-item"></div>
+                       <div class="st-item"></div>
+                       <div class="st-item"></div>
+                       <div class="st-item"></div>
+                       <div class="st-item"></div>
+                       <div class="st-item"></div>
+                    </div>
+                </div>
+                <div class="f-bottom">
+                    <p>现在可以根据个人喜好，自由调整首页栏目顺序啦~</p>
+                    <div>
+                         <button>调整栏目顺序</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="music-content">第二个模块（待完成）</div>
+            <div class="music-content">第三个模块（待完成）</div>
+            <div class="music-content">第四个模块（待完成）</div>
+            <div class="music-content">第五个模块（待完成）</div>
+            <div class="music-content">第六个模块（待完成）</div>
+        </div>
+        <div class="playlist">
+            <div class="albuminfo">
+                <div class="albumpic">
+                    <img src="">
+                </div>
+                <div class="albumsinger">
+                    <p class="a-header"><span class="gedan">歌单</span><span class="albumname">歌单名字</span></p>
+                    <p class="a-info"><span class="seterpic"></span><span class="setuser">冬瓜胖三斤</span><span class="settime">12-12-32</span>创建</p>
+                    <div class="btn-group">
+                        <button class="p-btn">播放全部</button>
+                        <button class="c-btn">收藏</button>
+                        <button class="s-btn">分享</button>
+                        <button class="d-btn">下载全部</button>
+                    </div>
+                    <p class="a-tag">标签：<span class="tag">添加标签</span></p>
+                    <p class="a-des">简介：<span class="albumdes">添加简介</span></p>
+                </div>
+            </div>      
+        
+            <div class="albumsongs">
+                    <ul class="search-nav clear search-top">
+                        <li class="active">歌曲列表</li>
+                        <li>评论</li>
+                        <li>收藏者</li>
+                    </ul>
+                        <div class="result-list">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="songId"></th>
+                                        <th class="opertate">操作</th>
+                                        <th class="music-title">音乐标题</th>
+                                        <th class="palyer">歌手</th>
+                                        <th class="textbook">专辑</th>
+                                        <th class="time">时长</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                   
+                                </tbody>
+                            </table>
+                </div>
+            </div>
+        </div>
+        <div class="search">
+                <div class="search-top">
+                    <p>搜索<span class="s">"盗墓笔记"</span>，找到<span class="songCount">234</span>首单曲</p>
+                    <ul class="search-nav clear">
+                        <li class="active">单曲</li>
+                        <li>歌手</li>
+                        <li>专辑</li>
+                        <li>视频</li>
+                        <li>歌单</li>
+                        <li>歌词</li>
+                        <li>电台主播</li>
+                        <li>用户</li>
+                    </ul>
+                </div>
+                <div class="result-list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="order"></th>
+                                <th class="opertate">操作</th>
+                                <th class="music-title">音乐标题</th>
+                                <th class="palyer">歌手</th>
+                                <th class="textbook">专辑</th>
+                                <th class="time">时长</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                           
+                        </tbody>
+                    </table>
+                </div>
+         </div>
+    </div>
+    <div class="lyric">    
+        <div class="bg-wrap">
+            <div class="lyric-wrap clear">
+            
+                <div class="music-show">
+                <div class="wrap">
+                    <div class="img-wrap">
+                            <div class="img">
+                            <img src="image/puse.png">
+                            </div>
+                    </div>
+                
+                    <div class="music-btn flex-group">
+                        <button><span></span>喜欢</button>
+                        <button><span></span>收藏</button>
+                        <button><span></span>下载</button>
+                        <button><span></span>分享</button>
+                    </div> 
+                </div>
+                </div>
+                <div class="music-info">
+                    <h3 class="music-name"></h3>
+                    <div class="other-info flex-group">
+                        <p>专辑:<span class="music-album"><a href="#"></a></span></p>
+                        <p>歌手:<span class="music-singer"><a href="#"></a></span></p>
+                        <p>来源:<span class="music-ori"><a href="#"></a></span></p>
+                    </div>
+                    <div class="music-lyric">
+                        Lorem ipsum, <br>歌曲刺激按方法就安静估计人攻击力温柔<br>t con<br>sectetur <br>adipisicing elit. Qu<br>ia <br>laborum eaq<br>ue velit porro dolorum. Aut nequ<br>e eius alias hic tenetur tempora l<br>audantium, quis<br>quam deserunt impedit,<br> adipi<br>sci aspernatur magni repellendus assumenda!
+                    </div>
+                </div>
+            </div>
+            <button class="shrink"><img src="image/收缩.png"></button>
+        </div>
+    </div>
+    <footer class="clear">
+        <audio id="audio" src="">
+            
+                Your browser does not support the audio tag.</audio>
+        <div class="play-bar">
+            <div class="playbar-btn">
+                <span class="btn-prev"></span>
+                <span class="btn-play no-play"></span>
+                <span class="btn-next"></span>
+            </div>
+            <div class="play-progress">
+                <span class="start-time">00:00</span>
+                <div class="pro-bar">
+                    <div class="pro-buffer"></div> 
+                    <div class="pro-circle"></div>
+                </div>
+                
+                <span class="end-time">59:59</span>
+            </div>
+            <div class="voice-progress">
+                <span><img class='voice' src="image/voice.png"></span>
+                <div class="voice-wrap">
+                    <div class="voice-bar">
+                        <div class="voice-pro"></div>
+                        <div class="pro-circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </footer>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/play.js"></script>
+    <script src="js/lyric.js"></script>
+    <script src='js/request.js'></script>
+    <!-- <script src="原生js/jsmain.js"></script> -->
+</body>
+</html>
