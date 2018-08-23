@@ -275,6 +275,5 @@ $(function(){
         });
    });
   
-    //不知道这句话是什么意思，为什么要封装？
-    window.requestAPI=requestAPI;
+  
 });
